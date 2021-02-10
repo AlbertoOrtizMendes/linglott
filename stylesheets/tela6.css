@@ -1,0 +1,41 @@
+#tela6 {
+  width: 100%;
+  height: 60vh;
+  display: flex;
+  flex-direction: row;
+  font-size: 1.5rem;
+  position: relative;
+}
+
+#tela6 > img{
+  position: absolute;
+  bottom: calc(-112px);
+  left: calc(50% - 195px);
+}
+
+#tela6>div {
+  width: 50%;
+}
+
+#tela6>div {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#tela6>div>p {
+  width: 75%;
+  height: 20%;
+}
+
+#tela6>div:nth-of-type(1) {
+  background-color: #2b2d43;
+  color: #5c9ead;
+}
+
+#tela6>div:nth-of-type(2) {
+  background-color: #8c98ae;
+  color: white;
+}

@@ -1,0 +1,27 @@
+#tela1 {
+  width: 100%;
+  height: 80vh;
+  background-image: url('../assets/img-00.png');
+  background-size: 100% 80vh;
+}
+
+#tela1>div {
+  width: 40%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 40px;
+  max-width: 400px;
+}
+
+#tela1>div>div>p {
+  color: #23333b;
+}
+
+#tela1>div>div>p:nth-of-type(1) {
+  font-size: 4rem;
+  margin-bottom: 0px;
+}
+
+#tela1>div>div>p:nth-of-type(2) {}
