@@ -22,6 +22,10 @@ html {
   scroll-behavior: smooth;
 }
 
+main {
+  width: 100%;
+}
+
 .aeonis {
   font-family: 'Aeonis';
 }
@@ -49,19 +53,23 @@ main {
 }
 
 .buttonRed {
+  background: none;
+  border: none;
+  font: inherit;
+  outline: inherit;
   display: flex;
   padding: 10px 50px;
   color: white;
   border-radius: 20px;
   background-color: #ff4b4b;
   justify-content: center;
-  margin: 0px 50px;
+  margin: 20px 0px 30px 0px;
   cursor: pointer;
+  width: 60%;
 }
 
 .sugo {
   font-family: 'Sugo Pro Classic Trial', sans-serif;
-  /* font-family: 'Sugo Pro Display Trial', sans-serif; */
 }
 
 #nav {

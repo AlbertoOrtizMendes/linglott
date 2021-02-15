@@ -4,7 +4,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 120px 0px;
+  background-image: url(../assets/img-03.png);
+  background-size: 29% auto;
+  background-repeat: no-repeat;
+  background-position: 20% 65%;
+  padding-top: 210px;
+  padding-bottom: 120px;
 }
 
 #telaInicial svg {
@@ -27,13 +32,25 @@
   margin-top: -80px;
 }
 
-#caixaCentral .aeonis > div{
+#caixaCentral .aeonis>div {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
 }
 
-#caixaCentral .aeonis > div > img{
+#caixaCentral .aeonis>div>img {
   margin-bottom: 20px
+}
+
+@media (max-width:1200px) {
+  #telaInicial {
+    background-size: 35% auto;
+  }
+}
+
+@media (max-width:992px) {
+  #telaInicial {
+    background-size: 40% auto;
+  }
 }
