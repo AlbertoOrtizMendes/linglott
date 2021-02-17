@@ -88,6 +88,7 @@ main {
   display: flex;
   flex-direction: row;
   align-items: center;
+  margin-right: 30px;
 }
 
 #navLogo {
@@ -190,5 +191,11 @@ main {
 
   #login, #register {
     margin-left: 10px;
+  }
+}
+
+@media (max-width:576px) {
+  #nav{
+    display: none;
   }
 }

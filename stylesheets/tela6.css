@@ -1,13 +1,12 @@
 #tela6 {
   width: 100%;
-  height: 60vh;
   display: flex;
   flex-direction: row;
   font-size: 1.5rem;
   position: relative;
 }
 
-#tela6 > img{
+#tela6>img {
   position: absolute;
   bottom: calc(-112px);
   left: calc(50% - 195px);
@@ -18,16 +17,14 @@
 }
 
 #tela6>div {
-  width: 100%;
-  height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 100px 50px;
 }
 
 #tela6>div>p {
-  width: 75%;
-  height: 20%;
+  margin-bottom: 0px;
 }
 
 #tela6>div:nth-of-type(1) {
@@ -38,4 +35,24 @@
 #tela6>div:nth-of-type(2) {
   background-color: #8c98ae;
   color: white;
+}
+
+@media (max-width:992px) {
+  #tela6>div {
+    padding: 7  0px;
+  }
+}
+
+@media (max-width:768px) {
+  #tela6>div {
+    width: 100%;
+  }
+
+  #tela6 {
+    flex-direction: column;
+  }
+
+  #tela6>img {
+    display: none;
+  }
 }

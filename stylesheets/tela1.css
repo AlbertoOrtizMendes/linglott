@@ -32,9 +32,30 @@
 
 @media (max-width:992px) {
   #tela1>div {
-    width: 50%;
+    width: 70%;
   }
+
   #tela1>div {
     max-width: 500px;
+  }
+}
+
+@media (max-width:768px) {
+  #tela1 p {
+    max-width: 100%;
+  }
+
+  #tela1 {
+    background-position: 70%;
+  }
+
+  #tela1>div {
+    width: 100%;
+  }
+}
+
+@media (max-width:576px) {
+  #tela1>div {
+    margin-left: 0px;
   }
 }

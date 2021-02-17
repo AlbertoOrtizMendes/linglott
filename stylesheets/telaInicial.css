@@ -54,3 +54,17 @@
     background-size: 40% auto;
   }
 }
+
+@media (max-width:576px) {
+  #telaInicial {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-size: 50% auto;
+    background-position: 20% 20%;
+  }
+
+
+  #telaInicial svg {
+    max-width: 100%;
+  }
+}

@@ -1,7 +1,5 @@
 #tela3 {
   width: 100%;
-  height: 62.5vw;
-  max-height: 80vh;
   background-image: url('../assets/img-01.png');
   background-size: 100vw 62.5vw;
   background-repeat: no-repeat;
@@ -9,14 +7,12 @@
 
 #tela3>div {
   width: 100%;
-  height: 100%;
   display: flex;
   flex-direction: row;
 }
 
 #tela3>div>div:nth-of-type(1) {
   width: 50%;
-  height: 100%;
   background-color: transparent;
   color: white;
   display: flex;
@@ -46,15 +42,19 @@
 #tela3>div>div:nth-of-type(2)>div:nth-of-type(1) {
   width: 100%;
   background-color: #5c9dad;
-  height: 32%;
   color: white;
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 25px 0px;
 }
 
 #tela3>div>div:nth-of-type(2)>div:nth-of-type(1)>span {
   width: 80%;
+}
+
+#tela3 li::marker {
+  color: #a23e47;
 }
 
 #tela3>div>div:nth-of-type(2)>div:nth-of-type(2) {
@@ -68,6 +68,7 @@
 
 #tela3>div>div:nth-of-type(2)>div:nth-of-type(2)>div {
   width: 80%;
+  padding: 25px 0px;
 }
 
 #tela3>div>div:nth-of-type(2)>div:nth-of-type(2)>div>.sugo {
@@ -96,4 +97,25 @@
 .roxo {
   background-color: #2b2d43;
   padding: 1px;
+}
+
+@media (max-width:992px) {
+  #tela3 {
+    background-size: cover;
+  }
+}
+
+@media (max-width:768px) {
+  #tela3>div {
+    flex-direction: column;
+  }
+
+  #tela3>div>div:nth-of-type(1) {
+    width: 100%;
+    padding: 25px 0px;
+  }
+
+  #tela3>div>div:nth-of-type(2) {
+    width: 100%;
+  }
 }
