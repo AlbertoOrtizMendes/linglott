@@ -64,7 +64,19 @@
     width: 90%;
   }
 
-  #tela2>div:nth-of-type(1){
+  #tela2>div:nth-of-type(1) {
     margin-bottom: 50px;
+  }
+}
+
+@media (max-width:576px) {
+  .buttonRed.buttonAjuste {
+    width: 50%;
+  }
+}
+
+@media (max-width:420px) {
+  .buttonRed.buttonAjuste {
+    width: 70%;
   }
 }
