@@ -13,9 +13,9 @@ let nav = document.getElementById('nav');
 hamburguer.addEventListener('click', revelaNav);
 fechaMenLateral.addEventListener('click', recolheNav);
 
-btnLogin.addEventListener('click', function(){
+btnLogin.addEventListener('click', function() {
   fnLoginForm();
-  if(celular){
+  if (celular) {
     recolheNav();
   }
 });
@@ -23,21 +23,21 @@ btnFechaLogin.addEventListener('click', fnFechaLogin);
 
 serviceLinks.addEventListener('click', function() {
   SmoothScrollTo("#tela2", 500);
-  if(celular){
+  if (celular) {
     recolheNav();
   }
 })
 
 meetLinks.addEventListener('click', function() {
   SmoothScrollTo("#tela8", 500);
-  if(celular){
+  if (celular) {
     recolheNav();
   }
 })
 
 aboutLinks.addEventListener('click', function() {
   SmoothScrollTo("#tela5", 500);
-  if(celular){
+  if (celular) {
     recolheNav();
   }
 })
@@ -50,24 +50,24 @@ moreInfo2.addEventListener('click', function() {
   SmoothScrollTo("#tela4", 500);
 })
 
-function recolheNav(){
+function recolheNav() {
   fechaMenLateral.style.left = '-240px';
   hamburguer.style.left = '15px';
   nav.style.left = '-240px';
 }
 
-function revelaNav(){
+function revelaNav() {
   fechaMenLateral.style.left = '190px';
   hamburguer.style.left = '-240px';
   nav.style.left = '0px';
 }
 
-function fnLoginForm(){
+function fnLoginForm() {
   console.log('entrei aqui')
   telaDeLogin.style.display = 'block';
 }
 
-function fnFechaLogin(){
+function fnFechaLogin() {
   telaDeLogin.style.display = 'none';
 }
 
@@ -80,11 +80,10 @@ function SmoothScrollTo(id_or_Name, timelength) {
   });
 }
 
-function celular(){
-  if(window.screen.width < 576){
-    return(true);
-  }
-  else{
-    return(false);
+function celular() {
+  if (window.screen.width < 576) {
+    return (true);
+  } else {
+    return (false);
   }
 }
