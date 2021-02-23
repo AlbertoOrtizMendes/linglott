@@ -15,7 +15,8 @@ fechaMenLateral.addEventListener('click', recolheNav);
 
 btnLogin.addEventListener('click', function() {
   fnLoginForm();
-  if (celular) {
+  if (celular()) {
+    console.log('teste');
     recolheNav();
   }
 });
@@ -23,21 +24,21 @@ btnFechaLogin.addEventListener('click', fnFechaLogin);
 
 serviceLinks.addEventListener('click', function() {
   SmoothScrollTo("#tela2", 500);
-  if (celular) {
+  if (celular()) {
     recolheNav();
   }
 })
 
 meetLinks.addEventListener('click', function() {
   SmoothScrollTo("#tela8", 500);
-  if (celular) {
+  if (celular()) {
     recolheNav();
   }
 })
 
 aboutLinks.addEventListener('click', function() {
   SmoothScrollTo("#tela5", 500);
-  if (celular) {
+  if (celular()) {
     recolheNav();
   }
 })
@@ -63,7 +64,6 @@ function revelaNav() {
 }
 
 function fnLoginForm() {
-  console.log('entrei aqui')
   telaDeLogin.style.display = 'block';
 }
 
@@ -81,6 +81,7 @@ function SmoothScrollTo(id_or_Name, timelength) {
 }
 
 function celular() {
+  console.log(window.screen.width)
   if (window.screen.width < 576) {
     return (true);
   } else {
