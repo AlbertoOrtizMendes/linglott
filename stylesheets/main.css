@@ -22,8 +22,125 @@ html {
   scroll-behavior: smooth;
 }
 
+.body.modal-open {
+  padding: 0px !important;
+}
+
 main {
   width: 100%;
+}
+
+#telaDeLogin {
+  display: none;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: 50000;
+  background-color: rgba(43, 45, 67, 0.8);
+}
+
+#telaDeLogin>div {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #2b2d43;
+  width: 60%;
+  margin: 50px auto;
+  height: 80%;
+  color: white;
+  border-radius: 25px;
+  border: 2px solid white;
+  max-width: 450px;
+  min-width: 360px;
+}
+
+#hamburguer {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #23333b;
+  border-radius: 50px;
+  display: none;
+}
+
+#fechaMenLateral {
+  position: fixed;
+  top: 10px;
+  /* left: 190px; */
+  left: -240px;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #2b2d43;
+  border-radius: 50px;
+  z-index: 99999999999999999;
+  color: white;
+  border: 3px solid white;
+  transition: 1s;
+}
+
+.fa-bars, .fa-times {
+  color: white;
+  margin: 0 !important;
+}
+
+#telaDeLogin>div>div {
+  display: flex;
+  flex-direction: column;
+  margin-top: -30px;
+}
+
+#fechaLogin {
+  position: absolute;
+  top: 0px;
+  right: 10px;
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+  font-size: 30px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+#telaDeLogin svg {
+  width: 272px;
+  height: 160px;
+}
+
+#telaDeLogin label {
+  margin-top: 15px;
+}
+
+#btnEntrar {
+  margin: 0 auto;
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+  color: white;
+  background-color: white;
+  display: block;
+  margin-top: 25px;
+  padding: 10px 25px;
+  border-radius: 15px;
+  color: #2b2d43;
+  font-weight: bold;
 }
 
 .aeonis {
@@ -115,12 +232,6 @@ main {
   cursor: pointer;
 }
 
-.dropDown {
-  display: none;
-  position: absolute;
-  bottom: 0px;
-}
-
 #login, #register {
   position: relative;
   font-size: 18px;
@@ -129,6 +240,8 @@ main {
   border-radius: 23px;
   margin-left: 15px;
   cursor: pointer;
+  color: white;
+  background-color: #2b2d43;
 }
 
 #login:hover, #register:hover {
@@ -162,12 +275,27 @@ main {
     padding: 20px 20px;
   }
 
+  #nav>div {
+    margin-right: 0px;
+  }
+
+  #navLinks>div:nth-of-type(1) {
+    margin-left: 15px;
+  }
+
+  #nav svg {
+    width: 130px;
+    height: 70px;
+    margin-bottom: -30px;
+  }
+
   #navLinks {
     font-size: 18px;
   }
 
   #login, #register {
     font-size: 18px;
+    margin-left: 10px;
   }
 }
 
@@ -184,6 +312,14 @@ main {
     font-size: 14px;
   }
 
+  #nav {
+    padding: 20px 5px;
+  }
+
+  .tracinho {
+    margin: 0px 3px;
+  }
+
   #nav svg {
     width: 106px;
     height: 60px;
@@ -195,7 +331,46 @@ main {
 }
 
 @media (max-width:576px) {
-  #nav{
-    display: none;
+  #nav {
+    flex-direction: column;
+    height: 100vh;
+    width: 240px;
+    justify-content: center;
+    align-items: center;
+    left: -240px;
+    transition: 0.5s;
+  }
+
+  #nav>div {
+    flex-direction: column;
+    margin-bottom: 25px;
+  }
+
+  #navLinks {
+    flex-direction: column;
+    margin-top: 25px;
+    font-size: 25px;
+  }
+
+  #nav svg {
+    width: 220px;
+    height: 120px;
+  }
+
+  .tracinho {
+    width: 100%;
+    border-top: 2px solid white;
+    margin: 0px 25px;
+    height: 2px;
+  }
+
+  #login, #register {
+    margin-top: 15px;
+    font-size: 25px;
+    width: 100%;
+  }
+
+  #hamburguer {
+    display: flex;
   }
 }

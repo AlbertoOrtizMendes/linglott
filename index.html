@@ -25,6 +25,19 @@
 <body>
 
   <main>
+    <section id = 'telaDeLogin' class='aeonis'>
+      <div>
+        <div class='svg' w3-include-html='assets/logo.html'></div>
+        <div>
+          <label for="">Login:</label>
+          <input id = 'inputLogin' type="text" name="" value="">
+          <label for="">Senha:</label>
+          <input id = 'inputSenha' type="text" name="" value="">
+          <button id = 'btnEntrar' type="button" name="button">ENTRAR</button>
+          <button id = 'fechaLogin' type="button" name="button">&times</button>
+        </div>
+      </div>
+    </section>
     <!-- Nav -->
     <nav id='nav'>
       <div>
@@ -38,16 +51,24 @@
         </div>
       </div>
       <div id='navBotoes' class='aeonis'>
-        <div id='login'>
-          <div>LOG IN</div>
-          <div class='dropDown'>Teste Login</div>
-        </div>
-        <div id='register'>
-          <div>REGISTER</div>
-          <div class='dropDown'>Teste Register</div>
-        </div>
+        <button id='login'>
+          LOG IN
+        </button>
+        <button id='register'>
+          REGISTER
+        </button>
       </div>
     </nav>
+
+    <!-- hamburguer -->
+    <div id = 'hamburguer'>
+      <i class="fas fa-bars"></i>
+    </div>
+
+    <!-- fecha menu -->
+    <div id = 'fechaMenLateral'>
+      <i class="fas fa-times"></i>
+    </div>
 
     <!-- Tela inicial -->
     <section id='telaInicial'>
@@ -273,7 +294,6 @@
       </div>
     </section>
 
-
   </main>
 
   <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
@@ -282,5 +302,6 @@
   <script type="text/javascript" src='javascript/events.js'></script>
   <script type="text/javascript" src='javascript/svg.js'></script>
 </body>
+
 
 </html>
