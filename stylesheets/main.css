@@ -68,6 +68,7 @@ main {
   background-color: #23333b;
   border-radius: 50px;
   display: none;
+  z-index: 1500;
 }
 
 #fechaMenLateral {
