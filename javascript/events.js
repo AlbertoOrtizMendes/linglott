@@ -9,9 +9,15 @@ let telaDeLogin = document.getElementById('telaDeLogin');
 let fechaMenLateral = document.getElementById('fechaMenLateral');
 let hamburguer = document.getElementById('hamburguer');
 let nav = document.getElementById('nav');
+let bandeiras = document.querySelectorAll('#caixaCentral .aeonis > div');
+let telaInicial = document.querySelector('#telaInicial');
 
 hamburguer.addEventListener('click', revelaNav);
 fechaMenLateral.addEventListener('click', recolheNav);
+bandeiras.forEach((item, i) => {
+  item.addEventListener('click', inicio)
+});
+
 
 btnLogin.addEventListener('click', function() {
   fnLoginForm();
@@ -69,6 +75,15 @@ function fnLoginForm() {
 
 function fnFechaLogin() {
   telaDeLogin.style.display = 'none';
+}
+
+function inicio(){
+  let escondidos = document.querySelectorAll('.escondido')
+  escondidos.forEach((item, i) => {
+    item.classList.remove('escondido');
+    item.style.opacity = '1';
+  });
+  telaInicial.classList.add('escondido');
 }
 
 function SmoothScrollTo(id_or_Name, timelength) {

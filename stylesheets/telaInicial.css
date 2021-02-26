@@ -8,8 +8,9 @@
   background-size: 29% auto;
   background-repeat: no-repeat;
   background-position: 20% 65%;
-  padding-top: 210px;
+  padding-top: 120px;
   padding-bottom: 120px;
+  height: 100vh;
 }
 
 #telaInicial svg {
@@ -37,6 +38,14 @@
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
+  cursor: pointer;
+  border: 2px solid transparent;
+  padding: 10px 20px;
+}
+
+#caixaCentral .aeonis>div:hover {
+  border: 2px solid white;
+  border-radius: 5px;
 }
 
 #caixaCentral .aeonis>div>img {

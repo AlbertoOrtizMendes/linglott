@@ -2,6 +2,7 @@
   width: 100%;
   background-image: url('../assets/img-00.png');
   background-size: cover;
+  margin-top: 96px;
 }
 
 #tela1>div {
@@ -38,6 +39,10 @@
   #tela1>div {
     max-width: 500px;
   }
+
+  #tela1 {
+    margin-top: 80px;
+  }
 }
 
 @media (max-width:768px) {
@@ -52,10 +57,18 @@
   #tela1>div {
     width: 100%;
   }
+
+  #tela1 {
+    margin-top: 73px;
+  }
 }
 
 @media (max-width:576px) {
   #tela1>div {
     margin-left: 0px;
+  }
+
+  #tela1 {
+    margin-top: 0px;
   }
 }

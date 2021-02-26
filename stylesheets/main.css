@@ -18,6 +18,20 @@
   src: url('../assets/fonts/sugo_pro/Sugo-Pro-Classic-Regular-trial.ttf');
 }
 
+#tela1, #tela2, #tela3, #tela4,
+#tela5, #tela6, #tela7, #tela8,
+#nav, #hamburguer{
+  transition: opacity 0.3s;
+  opacity: 0;
+}
+
+
+#tela1.escondido, #tela2.escondido, #tela3.escondido, #tela4.escondido,
+#tela5.escondido, #tela6.escondido, #tela7.escondido, #tela8.escondido,
+#nav.escondido, #hamburguer.escondido, #telaInicial.escondido{
+  display: none!important;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -200,6 +214,7 @@ main {
   padding: 20px 50px;
   justify-content: space-between;
   z-index: 1000;
+  top: 0px;
 }
 
 #nav>div {
@@ -327,7 +342,7 @@ main {
   }
 
   #login, #register {
-    margin-left: 10px;
+    margin-left: 9px;
   }
 }
 
