@@ -1,0 +1,80 @@
+@media (max-width:992px) {
+  #tela1>div {
+    width: 70%;
+  }
+
+  #tela1>div {
+    max-width: 500px;
+  }
+
+  #tela1 {
+    margin-top: 80px;
+  }
+
+  .buttonRed.buttonAjuste {
+    width: 80%;
+  }
+
+  #tela2>div>div:nth-of-type(1) {
+    font-size: 1.8rem;
+  }
+
+  #tela3 {
+    background-size: cover;
+  }
+
+  #tela4>div:nth-of-type(1)>div {
+    width: 100%;
+  }
+
+  #tela6>div {
+    padding: 7  0px;
+  }
+
+  #navLinks>div:nth-of-type(1) {
+    margin-left: 25px;
+  }
+
+  .tracinho {
+    margin: 0px 15px;
+  }
+
+  #nav {
+    padding: 20px 20px;
+  }
+
+  #nav>div {
+    margin-right: 0px;
+  }
+
+  #navLinks>div:nth-of-type(1) {
+    margin-left: 15px;
+  }
+
+  #nav svg {
+    width: 130px;
+    height: 70px;
+    margin-bottom: -30px;
+  }
+
+  #navLinks {
+    font-size: 18px;
+  }
+
+  #login, #register {
+    font-size: 18px;
+    margin-left: 10px;
+  }
+
+  .profDireita>div:nth-of-type(1) {
+    margin-left: calc((100% - 720px)/2);
+  }
+
+  .profEsquerda>div:nth-of-type(2) {
+    margin-right: calc((100% - 720px)/2);
+  }
+
+  #telaInicial {
+    background-size: 40% auto;
+  }
+}

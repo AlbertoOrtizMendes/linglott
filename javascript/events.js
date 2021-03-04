@@ -1,6 +1,6 @@
-let serviceLinks = document.querySelectorAll('#navLinks > div:nth-of-type(1)')[0]
-let meetLinks = document.querySelectorAll('#navLinks > div:nth-of-type(3)')[0]
-let aboutLinks = document.querySelectorAll('#navLinks > div:nth-of-type(5)')[0]
+let serviceLinks = document.querySelector('#navLinks > div:nth-of-type(1)')
+let meetLinks = document.querySelector('#navLinks > div:nth-of-type(3)')
+let aboutLinks = document.querySelector('#navLinks > div:nth-of-type(5)')
 let moreInfo1 = document.querySelectorAll('.moreInfo')[0];
 let moreInfo2 = document.querySelectorAll('.moreInfo')[1];
 let btnLogin = document.getElementById('login');

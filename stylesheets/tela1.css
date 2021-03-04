@@ -1,15 +1,10 @@
 #tela1 {
-  width: 100%;
   background-image: url('../assets/img-00.png');
   background-size: cover;
   margin-top: 96px;
 }
 
 #tela1>div {
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   margin-left: 40px;
   width: 40%;
   max-width: 500px;
@@ -23,52 +18,4 @@
   font-size: 4rem;
   margin-bottom: 0px;
   margin-top: 50px;
-}
-
-#tela1 .aeonis {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-@media (max-width:992px) {
-  #tela1>div {
-    width: 70%;
-  }
-
-  #tela1>div {
-    max-width: 500px;
-  }
-
-  #tela1 {
-    margin-top: 80px;
-  }
-}
-
-@media (max-width:768px) {
-  #tela1 p {
-    max-width: 100%;
-  }
-
-  #tela1 {
-    background-position: 70%;
-  }
-
-  #tela1>div {
-    width: 100%;
-  }
-
-  #tela1 {
-    margin-top: 73px;
-  }
-}
-
-@media (max-width:576px) {
-  #tela1>div {
-    margin-left: 0px;
-  }
-
-  #tela1 {
-    margin-top: 0px;
-  }
 }

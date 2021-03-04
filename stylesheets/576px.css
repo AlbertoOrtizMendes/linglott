@@ -1,0 +1,81 @@
+@media (max-width:576px) {
+  #tela1>div {
+    margin-left: 0px;
+    padding: 25px;
+  }
+
+  #tela1 {
+    margin-top: 0px;
+  }
+
+  .buttonRed.buttonAjuste {
+    width: 50%;
+  }
+
+  #tela4>div:nth-of-type(2) {
+    flex-direction: column;
+  }
+
+  #tela4>div:nth-of-type(2)>div {
+    height: auto;
+    padding: 25px;
+  }
+
+  #nav {
+    flex-direction: column;
+    height: 100vh;
+    width: 240px;
+    justify-content: center;
+    align-items: center;
+    left: -240px;
+    transition: 0.5s;
+  }
+
+  #nav>div {
+    flex-direction: column;
+    margin-bottom: 25px;
+  }
+
+  #navLinks {
+    flex-direction: column;
+    margin-top: 25px;
+    font-size: 25px;
+  }
+
+  #nav svg {
+    width: 220px;
+    height: 120px;
+  }
+
+  .tracinho {
+    width: 100%;
+    border-top: 2px solid white;
+    margin: 0px 25px;
+    height: 2px;
+  }
+
+  #login, #register {
+    margin-top: 15px;
+    font-size: 25px;
+    width: 100%;
+  }
+
+  #hamburguer {
+    display: flex;
+  }
+
+  #telaInicial {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-size: 50% auto;
+    background-position: 20% 20%;
+  }
+
+  #telaInicial svg {
+    max-width: 100%;
+  }
+
+  #tela8 > .container:nth-of-type(1){
+    width: 80%;
+  }
+}

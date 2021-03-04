@@ -1,0 +1,17 @@
+@media (max-width:1200px) {
+  .buttonRed.buttonAjuste {
+    width: 65%;
+  }
+
+  .profDireita>div:nth-of-type(1) {
+    margin-left: calc((100% - 960px)/2);
+  }
+
+  .profEsquerda>div:nth-of-type(2) {
+    margin-right: calc((100% - 960px)/2);
+  }
+
+  #telaInicial {
+    background-size: 35% auto;
+  }
+}

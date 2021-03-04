@@ -1,0 +1,164 @@
+@media (max-width:768px) {
+  #tela1 p {
+    max-width: 100%;
+  }
+
+  #tela1 {
+    background-position: 70%;
+    margin-top: 73px;
+    background-image: none;
+    border-bottom: 5px dashed #2b2d43;
+  }
+
+  #tela1>div {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  #tela1>div>div>p:nth-of-type(1) {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    margin-top: 50px;
+  }
+
+  .buttonRed.buttonAjuste {
+    width: 40%;
+  }
+
+  #tela2 {
+    flex-direction: column;
+  }
+
+  #tela2>div {
+    width: 90%;
+  }
+
+  #tela2>div:nth-of-type(1) {
+    margin-bottom: 50px;
+  }
+
+  #tela3>div {
+    flex-direction: column;
+  }
+
+  #tela3>div>div:nth-of-type(1) {
+    width: 100%;
+    padding: 25px 0px;
+  }
+
+  #tela3>div>div:nth-of-type(2) {
+    width: 100%;
+  }
+
+  #tela4>div:nth-of-type(2) {
+    flex-direction: column;
+  }
+
+  #tela4>div:nth-of-type(2)>div {
+    width: 100%;
+    height: 200px;
+  }
+
+  #tela4>div:nth-of-type(1) {
+    background-position: 36%;
+  }
+
+  #tela6>div {
+    width: 100%;
+  }
+
+  #tela6 {
+    flex-direction: column;
+  }
+
+  #tela6>img {
+    display: none;
+  }
+
+  #tela7 {
+    padding-top: 50px;
+  }
+
+  #tela7 p:nth-of-type(1) {
+    text-align: center;
+  }
+
+  #navLinks>div:nth-of-type(1) {
+    margin-left: 20px;
+  }
+
+  #navLinks {
+    font-size: 14px;
+  }
+
+  #login, #register {
+    font-size: 14px;
+  }
+
+  #nav {
+    padding: 20px 5px;
+  }
+
+  .tracinho {
+    margin: 0px 3px;
+  }
+
+  #nav svg {
+    width: 106px;
+    height: 60px;
+  }
+
+  #login, #register {
+    margin-left: 9px;
+  }
+
+  .profDireita, .profEsquerda {
+    flex-direction: column;
+    max-width: 540px;
+    margin: 0 auto;
+  }
+
+  .profDireita {
+    flex-direction: column-reverse;
+  }
+
+  .bordaFantasma:nth-of-type(2), .bordaFantasma:nth-of-type(1) {
+    width: 45%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 25px;
+  }
+
+  .profEsquerda {
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+
+  .profEsquerda>div:nth-of-type(2) {
+    align-items: center;
+  }
+
+  .bordaFantasma {
+    width: 100%;
+    max-width: 540px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .profDireita>div:nth-of-type(1), .profEsquerda>div:nth-of-type(2) {
+    margin-top: 25px;
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .bordaFantasma>img, .profDireita>div:nth-of-type(1)>img {
+    width: 160px;
+  }
+
+  .profEsquerda img {
+    margin-bottom: 25px;
+  }
+}

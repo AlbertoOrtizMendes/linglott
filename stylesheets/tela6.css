@@ -1,7 +1,5 @@
 #tela6 {
-  width: 100%;
   display: flex;
-  flex-direction: row;
   font-size: 1.5rem;
   position: relative;
 }
@@ -17,9 +15,6 @@
 }
 
 #tela6>div {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   padding: 100px 50px;
 }
 
@@ -35,24 +30,4 @@
 #tela6>div:nth-of-type(2) {
   background-color: #8c98ae;
   color: white;
-}
-
-@media (max-width:992px) {
-  #tela6>div {
-    padding: 7  0px;
-  }
-}
-
-@media (max-width:768px) {
-  #tela6>div {
-    width: 100%;
-  }
-
-  #tela6 {
-    flex-direction: column;
-  }
-
-  #tela6>img {
-    display: none;
-  }
 }

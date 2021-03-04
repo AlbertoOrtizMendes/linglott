@@ -1,9 +1,6 @@
 #telaInicial {
   width: 100%;
   background-color: #5c9dad;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   background-image: url(../assets/img-03.png);
   background-size: 29% auto;
   background-repeat: no-repeat;
@@ -38,7 +35,6 @@
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  cursor: pointer;
   border: 2px solid transparent;
   padding: 10px 20px;
 }
@@ -50,29 +46,4 @@
 
 #caixaCentral .aeonis>div>img {
   margin-bottom: 20px
-}
-
-@media (max-width:1200px) {
-  #telaInicial {
-    background-size: 35% auto;
-  }
-}
-
-@media (max-width:992px) {
-  #telaInicial {
-    background-size: 40% auto;
-  }
-}
-
-@media (max-width:576px) {
-  #telaInicial {
-    padding-top: 60px;
-    padding-bottom: 60px;
-    background-size: 50% auto;
-    background-position: 20% 20%;
-  }
-
-  #telaInicial svg {
-    max-width: 100%;
-  }
 }
