@@ -4,13 +4,16 @@ let aboutLinks = document.querySelector('#navLinks > div:nth-of-type(5)')
 let moreInfo1 = document.querySelectorAll('.moreInfo')[0];
 let moreInfo2 = document.querySelectorAll('.moreInfo')[1];
 let btnLogin = document.getElementById('login');
+let btnRegister = document.getElementById('register');
 let btnFechaLogin = document.getElementById('fechaLogin');
+let btnFechaCadastro = document.getElementById('fechaCadastro');
 let telaDeLogin = document.getElementById('telaDeLogin');
 let fechaMenLateral = document.getElementById('fechaMenLateral');
 let hamburguer = document.getElementById('hamburguer');
 let nav = document.getElementById('nav');
 let bandeiras = document.querySelectorAll('#caixaCentral .aeonis > div');
 let telaInicial = document.querySelector('#telaInicial');
+let telaDeCadastro = document.getElementById('telaDeCadastro');
 
 hamburguer.addEventListener('click', revelaNav);
 fechaMenLateral.addEventListener('click', recolheNav);
@@ -22,12 +25,17 @@ bandeiras.forEach((item, i) => {
 btnLogin.addEventListener('click', function() {
   fnLoginForm();
   if (celular()) {
-    console.log('teste');
+    recolheNav();
+  }
+});
+btnRegister.addEventListener('click', function() {
+  fnRegisterForm();
+  if (celular()) {
     recolheNav();
   }
 });
 btnFechaLogin.addEventListener('click', fnFechaLogin);
-
+btnFechaCadastro.addEventListener('click', fnFechaCadastro);
 serviceLinks.addEventListener('click', function() {
   SmoothScrollTo("#tela2", 500);
   if (celular()) {
@@ -73,8 +81,16 @@ function fnLoginForm() {
   telaDeLogin.style.display = 'block';
 }
 
+function fnRegisterForm() {
+  telaDeCadastro.style.display = 'block';
+}
+
 function fnFechaLogin() {
   telaDeLogin.style.display = 'none';
+}
+
+function fnFechaCadastro() {
+  telaDeCadastro.style.display = 'none';
 }
 
 function inicio(){
